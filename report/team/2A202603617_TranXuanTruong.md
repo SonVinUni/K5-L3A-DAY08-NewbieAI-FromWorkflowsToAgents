@@ -5,7 +5,7 @@
 - Họ tên: Trần Xuân Trường
 - MSSV: 2A202603617
 - Email: truongxuan2834@gmail.com
-- GitHub: [XuanTruong28]([https://github.com/XuanTruong28]).
+- GitHub: [XuanTruong28](https://github.com/XuanTruong28)
 
 ## 2. Phần việc phụ trách
 
