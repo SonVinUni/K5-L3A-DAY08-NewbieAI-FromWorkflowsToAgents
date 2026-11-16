@@ -11,7 +11,7 @@
 
 - **Shape C (Orchestrator) — Core Flow & Durability**:
   - Chịu trách nhiệm chính về kiến trúc và luồng điều phối của Shape C trong `src/lab8/shapes/orchestrator.py`.
-  - Phối hợp với Người 4 (Handoff & Security) để hoàn thiện toàn bộ quy trình từ tiếp nhận claim, điều phối investigator chỉ đọc, tính toán bồi thường và gọi cổng host an toàn.
+  - Phối hợp với thành viên thứ 4 (Handoff & Security) để hoàn thiện toàn bộ quy trình từ tiếp nhận claim, điều phối investigator chỉ đọc, tính toán bồi thường và gọi cổng host an toàn.
 - **Nghiên cứu mở rộng (Bonus Topic B1 — Investigator song song & Critical Path)**:
   - Chủ trì triển khai nghiên cứu mở rộng B1 theo lý thuyết của Google Research 2026 (*Towards a Science of Scaling Agent Systems*).
   - Xây dựng biến thể `bonus/orchestrator_parallel.py`, mô hình độ trễ `bonus/latency.yaml`, test suite `tests/test_bonus_b1.py` và hoàn thành báo cáo `report/team/bonus_report.md`.
