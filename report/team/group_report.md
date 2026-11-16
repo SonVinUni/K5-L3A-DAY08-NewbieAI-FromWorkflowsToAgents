@@ -26,7 +26,9 @@ Bài toán là xử lý claim hoàn phí vận chuyển trên cùng một bộ d
 
 Shape A (workflow) dùng các bước Python cố định: đọc claim bằng `get_claim_view`, kiểm tra `order_id`, gọi `lookup_order`, tính quote bằng `compute_compensation` và nếu quote dương thì gọi `durability.issue_refund` với quote đầy đủ. Shape này không dùng model để chọn số tiền nên không bị ảnh hưởng bởi nội dung ticket hay seed.
 
-Shape B (single) dùng `run_react` với giới hạn 8 bước. Agent chỉ được chọn các read tool; sau khi có quote, shape chuyển sang host để kiểm approval, cap theo order, idempotency và ghi refund. Shape C (orchestrator) tạo handoff bằng allowlist, chạy investigator chỉ đọc qua `run_readonly_investigators`, rồi orchestrator dùng order view để tính quote và gọi host. Handoff không chứa parent secret, raw headers hay dữ liệu ngoài allowlist. Trace ghi những event cần thiết như claim view đã lọc, investigator/handoff, quote và decision; các field nhạy cảm không được ghi.
+Shape B (single) dùng `run_react` với giới hạn 8 bước. Agent chỉ được chọn các read tool; sau khi có quote, shape chuyển sang host để kiểm approval, cap theo order, idempotency và ghi refund.
+
+Shape C (orchestrator) tạo handoff bằng allowlist, chạy investigator chỉ đọc qua `run_readonly_investigators`, rồi orchestrator dùng order view để tính quote và gọi host. Handoff không chứa parent secret, raw headers hay dữ liệu ngoài allowlist. Trace ghi những event cần thiết như claim view đã lọc, investigator/handoff, quote và decision; các field nhạy cảm không được ghi.
 
 ## 4. Kết quả
 
