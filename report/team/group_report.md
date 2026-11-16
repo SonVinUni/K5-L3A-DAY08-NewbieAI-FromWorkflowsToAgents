@@ -1,6 +1,8 @@
 # Báo cáo nhóm — Lab 8 LogiX-VN
 
 Tối đa 5 trang ngoài phụ lục. Số liệu lấy từ file trong `src/reports/`, không chép tay từ terminal.
+<img width="1024" height="565" alt="image" src="https://github.com/user-attachments/assets/fcd0ba09-d5db-4d1b-8206-729293d3e029" />
+
 
 ## 1. Thông tin nhóm
 
