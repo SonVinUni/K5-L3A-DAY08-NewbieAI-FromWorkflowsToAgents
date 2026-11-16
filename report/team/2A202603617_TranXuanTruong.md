@@ -2,10 +2,10 @@
 
 ## 1. Thông tin thành viên
 
-- Họ tên: [Điền họ và tên của bạn tại đây]
-- MSSV: [Điền mã số sinh viên tại đây]
-- Email: [Điền email trường / cá nhân tại đây]
-- GitHub: [Điền username GitHub của bạn tại đây]
+- Họ tên: Trần Xuân Trường
+- MSSV: 2A202603617
+- Email: truongxuan2834@gmail.com
+- GitHub: XuanTruong28
 
 ## 2. Phần việc phụ trách
 
