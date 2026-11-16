@@ -2,17 +2,19 @@
 
 ## Thông tin nhóm
 
-- Tên nhóm:
+- Tên nhóm: NewbieAI
 - Lớp: L3A
-- Repo nhóm: `K5-L3A-DAY08-TenNhom-FromWorkflowsToAgents` (xem [SUBMISSION.md](SUBMISSION.md))
-- URL repo, nhánh nộp, commit chốt:
+- Repo nhóm: `K5-L3A-DAY08-NewbieAI-FromWorkflowsToAgents`
+- URL repo, nhánh nộp, commit chốt: https://github.com/SonVinUni/K5-L3A-DAY08-NewbieAI-FromWorkflowsToAgents.git; nhánh `main`; commit hiện tại `43a140b`
 
 ## Thành viên
 
 | STT | Họ tên | MSSV | Email | GitHub | Vai trò |
 | --: | ------ | ---- | ----- | ------ | ------- |
-|   1 |        |      |       |        |         |
+|   1 | Võ Sỹ Thái Sơn | 2A202603623 | vosythaison@gmail.com | SonVinUni | Shape A (workflow) + integration, báo cáo chung |
 |   2 |        |      |       |        |         |
+|   3 |        |      |       |        |         |
+|   4 |        |      |       |        |         |
 
 Gợi ý chia vai:
 
@@ -25,6 +27,9 @@ Gợi ý chia vai:
 
 | Người | Vai | Commit | Test đã thêm hoặc sửa |
 | --- | --- | --- | --- |
+| Võ Sỹ Thái Sơn | Shape A (workflow) + integration, báo cáo chung | fff3326 (Implement deterministic workflow refund shape) | src/tests/test_workflow_policy_denied.py |
+| | | | |
+| | | | |
 | | | | |
 
 ## Cá nhân
