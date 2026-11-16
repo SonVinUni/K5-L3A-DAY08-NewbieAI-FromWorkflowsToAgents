@@ -32,7 +32,7 @@ Gợi ý chia vai:
 | Võ Sỹ Thái Sơn | Shape A (workflow) + integration, báo cáo chung | fff3326 (Implement deterministic workflow refund shape) | src/tests/test_workflow_policy_denied.py |
 | Trần Nguyễn Anh Phong | Shape B (Single Agent) + ReAct, Budget, Testing | test(single-agent): add custom tests for claim processing and idempotency | src/tests/test_single_agent_custom.py  |
 | Trần Xuân Trường | Shape C (orchestrator) + core flow & durability, bonus B1 | 0f994eb (hàm orchestrator và test của thành viên 3 (mục C ) trong team) | src/tests/test_n3_orchestrator.py |
-| Trần Quốc Đông | Shape C (orchestrator) + handoff & security trace, testing | `<commit_hash_N4>` (`<commit_message_N4>`) | src/tests/test_orchestrator_trace_security.py |
+| Trần Quốc Đông | Shape C (orchestrator) + handoff & security trace, testing | 5397a3c (test: cover orchestrator trace privacy and crash recovery) | src/tests/test_orchestrator_trace_security.py, src/tests/test_orchestrator_crash_resume.py |
 
 ## Cá nhân
 
