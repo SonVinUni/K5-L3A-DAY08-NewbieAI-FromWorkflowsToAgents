@@ -13,7 +13,7 @@
 | --: | ------ | ---- | ----- | ------ | ------- |
 |   1 | Võ Sỹ Thái Sơn | 2A202603623 | vosythaison@gmail.com | SonVinUni | Shape A (workflow) + integration, báo cáo chung |
 |   2 |        |      |       |        |         |
-|   3 |   Trần Xuân Trường     | 2A202603617      |  truongxuan2834@gmail.com     |   XuanTruong28     |   Shape C (orchestrator) + core flow & durability, bonus B1      |
+|   3 |   Trần Xuân Trường     | 2A202603617      |  truongxuan2834@gmail.com     |   XuanTruong28     |   Shape C (orchestrator) + core flow & durability and Bonus part Topic B1      |
 |   4 |    Trần Quốc Đông    | 2A202603643     | dongtranquoc951@gmail.com      |   dongtranquoc951     |  Shape C (orchestrator) + handoff & security trace, testing       |
 
 
