@@ -5,7 +5,7 @@ Tối đa 5 trang ngoài phụ lục. Số liệu lấy từ file trong `src/rep
 
 ## 1. Thông tin nhóm
 
-- Tên nhóm:
+- Tên nhóm: K5-L3A-DAY08-NewbieAI-FromWorkflowsToAgents
 - Thành viên: xem `TEAM.md`
 - Commit chốt (trùng `report/team/decision_adr.md`):
 ##  Phân bổ công việc nhóm 4 người
