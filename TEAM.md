@@ -28,9 +28,9 @@ Gợi ý chia vai:
 | Người | Vai | Commit | Test đã thêm hoặc sửa |
 | --- | --- | --- | --- |
 | Võ Sỹ Thái Sơn | Shape A (workflow) + integration, báo cáo chung | fff3326 (Implement deterministic workflow refund shape) | src/tests/test_workflow_policy_denied.py |
-| | | | |
-| | | | |
-| | | | |
+|  | | |  |
+| Trần Xuân Trường | Shape C (orchestrator) + core flow & durability, bonus B1 | 0f994eb (hàm orchestrator và test của thành viên 3 (mục C ) trong team) | src/tests/test_n3_orchestrator.py |
+| Trần Quốc Đông | Shape C (orchestrator) + handoff & security trace, testing | `<commit_hash_N4>` (`<commit_message_N4>`) | src/tests/test_orchestrator_trace_security.py |
 
 ## Cá nhân
 
