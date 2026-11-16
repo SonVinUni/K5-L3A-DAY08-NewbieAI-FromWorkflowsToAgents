@@ -40,7 +40,7 @@
 
 ## 4. Bằng chứng
 
-- **Commit hash:** `0f994eb` và các commit bonus.
+- **Commit hash:** 0f994eb (Shape C Core) và 7455cb4 (Bonus B1).
 - **Kết quả kiểm thử tự động:**
   - Ma trận test học viên của Orchestrator: Đạt **62 passed / 62 tests (100%)** (`pytest -k orchestrator`).
   - Test cá nhân độc lập: Đạt **1 passed** (`pytest tests/test_n3_orchestrator.py`).
