@@ -12,8 +12,8 @@
 | STT | Họ tên | MSSV | Email | GitHub | Vai trò |
 | --: | ------ | ---- | ----- | ------ | ------- |
 |   1 | Võ Sỹ Thái Sơn | 2A202603623 | vosythaison@gmail.com | SonVinUni | Shape A (workflow) + integration, báo cáo chung |
-|   2 |        |      |       |        |         |
-|   3 |        |      |       |        |         |
+|   2 |    Trần Quốc Đông    | 2A202603643     | dongtranquoc951@gmail.com      |   dongtranquoc951     |         |
+|   3 |   Trần Xuân Trường     | 2A202603617      |  truongxuan2834@gmail.com     |   XuanTruong28     |         |
 |   4 |        |      |       |        |         |
 
 Gợi ý chia vai:
