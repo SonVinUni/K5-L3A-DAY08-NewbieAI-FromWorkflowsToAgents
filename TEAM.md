@@ -18,10 +18,6 @@
 
 
 
-Gợi ý chia vai:
-
-- Nhóm 6 người: integration; workflow; single agent; orchestrator; ledger/policy/crash; eval/report.
-- Nhóm 4 người: workflow + integration; single; orchestrator + handoff; ledger + evaluation.
 
 ## Bảng đóng góp
 
