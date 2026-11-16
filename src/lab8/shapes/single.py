@@ -9,6 +9,7 @@ from __future__ import annotations
 
 from lab8.db import connect
 from lab8.durability import InjectedCrash, issue_refund
+from lab8.mock_llm import complete
 from lab8.runtime import run_react
 from lab8.schemas import Budget, RunResult, make_run_id
 from lab8.shapes.common import finish
@@ -133,12 +134,37 @@ def run_claim(
                 proposal_amount,
                 crash_at=crash_at,
             )
-            status = "resolved" if refund["ok"] else "denied"
-            error_reason = None if refund["ok"] else refund.get("reason", "refund_denied")
+            if refund["ok"]:
+                status = "resolved"
+                error_reason = None
+            elif refund.get("conflict") or refund.get("reason") == "amount_conflict":
+                # A retry with a different amount must not overwrite a committed refund.
+                status = "failed"
+                error_reason = "amount_conflict"
+            else:
+                status = "denied"
+                error_reason = refund.get("reason", "refund_denied")
             trace.add(
                 "refund_result",
                 {"ok": refund["ok"], "reason": refund["reason"]},
             )
+
+        # Generate a deterministic customer-facing draft using the provided
+        # MockLLM. It updates Budget's model calls, tokens and simulated cost.
+        # Never use generated text to determine policy, quote or approval.
+        # The prompt includes only non-sensitive run metadata, not raw ticket,
+        # order rows, headers or private notes.
+        draft = complete(
+            budget,
+            seed=seed,
+            purpose="draft",
+            prompt=(
+                f"Draft a brief acknowledgement for claim {claim_id}. "
+                f"Outcome: {status}. "
+                f"Proposed refund amount (VND): {proposal_amount}."
+            ),
+        )
+        trace.add("customer_draft", {"generated": bool(draft)})
 
         return finish(
             conn,
@@ -152,7 +178,22 @@ def run_claim(
             error_reason=error_reason,
         )
     except InjectedCrash:
-        # The fault-injection tests must observe the injected crash.
+        # Deliberately propagate injected crashes for recovery testing.
         raise
+    except Exception as exc:
+        # Ordinary runtime failures should produce a trace and failed RunResult.
+        # Do not log exception messages, which might contain sensitive data.
+        trace.add("error", {"type": type(exc).__name__})
+        return finish(
+            conn,
+            shape="single",
+            claim_id=claim_id,
+            seed=seed,
+            status="failed",
+            proposal_amount=int((state.get("quote") or {}).get("amount_vnd", 0)),
+            budget=budget,
+            trace=trace,
+            error_reason="runtime_error",
+        )
     finally:
         conn.close()
